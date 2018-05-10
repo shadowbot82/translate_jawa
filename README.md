@@ -1,1 +1,1 @@
-# [Translator_Jawa] Versi CLI
+# [Translator Jawa Versi CLI]
