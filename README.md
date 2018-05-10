@@ -13,7 +13,9 @@ Kamu harus sudah menginstall php dan git terlebih dahulu sebelum mengikuti langk
 ```bash
 apt-get install php git
 ```
-Jika sudah terinstall seilahkan ikuti langkah langkah diatas :)
+Jika sudah terinstall silahkan ikuti langkah langkah diatas :)
 Saat dimintai memilih opsi, kamu isi dengan no opsi yang kamu tuju. Seperti contoh berikut
 
 ![Screen Shot](https://raw.githubusercontent.com/ardzz/translator_jawa/master/DeepinScreenshot_select-area_20180510105751.png)
+
+## *SELAMAT MENGGUNAKAN!*
