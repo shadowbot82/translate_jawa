@@ -16,8 +16,6 @@ sleep(1);
 echo "     [ Translator Jawa CLI Based ]\n";
 sleep(1);
 echo "+------------------------------------+\n";
-
-//echo basename(__FILE__)."\n";
 echo "1) Bahasa Indonesia ke Jawa\n";
 sleep(1);
 echo "2) Jawa ke Bahasa Indonesia\n";
