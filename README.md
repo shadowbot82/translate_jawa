@@ -8,7 +8,7 @@ git clone https://github.com/ardzz/translator_jawa.git && cd translator_jawa
 ```bash
 php translator_jawa.php
 ```
-*CATATAN!*
+### *CATATAN!*
 Kamu harus sudah menginstall php dan git terlebih dahulu sebelum mengikuti langkah langkah diatas
 ```bash
 apt-get install php git
