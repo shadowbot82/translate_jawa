@@ -15,4 +15,5 @@ apt-get install php git
 ```
 Jika sudah terinstall seilahkan ikuti langkah langkah diatas :)
 Saat dimintai memilih opsi, kamu isi dengan no opsi yang kamu tuju
-[![Screen Shot](https://raw.githubusercontent.com/ardzz/translator_jawa/master/DeepinScreenshot_select-area_20180510105751.png)
+
+[![Screen Shot](https://raw.githubusercontent.com/ardzz/translator_jawa/master/DeepinScreenshot_select-area_20180510105751.png)]
