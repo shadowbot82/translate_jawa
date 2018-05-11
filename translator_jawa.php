@@ -2,9 +2,10 @@
 /*
  @Author 			 : Ardan (Ardzz) [Z0NK3X]
  @Date 				 : 10-05-2018
- @Last modified by 	 	 : 10-05-2018
+ @Last modified by 	 : 10-05-2018
  My Github 			 : https://github.com/ardzz/
  IG 				 : https://www.instagram.com/ar_dhann/
+ BLOG 				 : https://bac0ders.me/
 */
 
 $green  = "\e[92m";
@@ -16,6 +17,8 @@ sleep(1);
 echo "     [ Translator Jawa CLI Based ]\n";
 sleep(1);
 echo "+------------------------------------+\n";
+
+//echo basename(__FILE__)."\n";
 echo "1) Bahasa Indonesia ke Jawa\n";
 sleep(1);
 echo "2) Jawa ke Bahasa Indonesia\n";
@@ -29,6 +32,8 @@ sleep(1);
 echo "6) Krama Inggil ke Bahasa Indonesia\n";
 sleep(1);
 echo "7) About Me :)\n";
+sleep(1);
+echo "8) Keluar :(\n";
 sleep(1);
 echo "Pilih salah satu opsi : ";
 $id = trim(fgets(STDIN, 1024));
@@ -327,5 +332,11 @@ if ($id == "7") {
 	            BAC0DERS.COM
         +--------------------------------------+\n";
         exit();
+}
+if ($id == "8") {
+	system('clear');
+	echo "Kamu akan segera keluar... :(\n";
+	sleep(3);
+	exit();
 }
 ?>
