@@ -363,7 +363,7 @@ if ($id == "8") {
 }
 $nf = basename(__FILE__);
 if ($id == "9"){
-	$version = "1.0"; //versi aplikasi jangan diganti!
+	$version = "1.1"; //versi aplikasi jangan diganti!
 	$update = file_get_contents("https://urlredirector.tk/apdet.php?version=".$version);
 	$update = json_decode($update, TRUE);
 	if ($update['update'] == "yes") {
@@ -373,6 +373,9 @@ if ($id == "9"){
 		if ($up == "y") {
 			echo "Sedang Mengunduh....\n";
 			system('wget -O '.$nf.' https://raw.githubusercontent.com/ardzz/translator_jawa/master/translator_jawa.php');
+			echo "Berhasil Diperbarui!\n";
+			sleep(2);
+			system('php '.$nf);
 			}
 	}
 	elseif ($update['version'] == "null")
