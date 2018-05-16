@@ -23,7 +23,7 @@ $red    = "\e[91m";
 $yellow = "\e[93m";
 $blue   = "\e[36m";
 system("clear");
-sleep(1);
+//sleep(1);
 function banner(){
 	system('clear');
 	echo "
@@ -37,26 +37,26 @@ function banner(){
 	\n";
 }
 banner();
-sleep(1);
+//sleep(1);
 //echo "+------------------------------------+\n";
 
 //echo basename(__FILE__)."\n";
 echo "1) Bahasa Indonesia ke Jawa\n";
-sleep(1);
+//sleep(1);
 echo "2) Jawa ke Bahasa Indonesia\n";
-sleep(1);
+//sleep(1);
 echo "3) Bahasa Indonesia ke Krama\n";
-sleep(1);
+//sleep(1);
 echo "4) Krama ke Bahasa Indonesia\n";
-sleep(1);
-echo "5) Bahasa Indonesia ke Krama Inggil\n";
-sleep(1);
-echo "6) Krama Inggil ke Bahasa Indonesia\n";
-sleep(1);
+//sleep(1);
+echo "5) Bahasa Indonesia ke Krama Halus\n";
+//sleep(1);
+echo "6) Krama Halus ke Bahasa Indonesia\n";
+//sleep(1);
 echo "7) About Me :)\n";
-sleep(1);
+//sleep(1);
 echo "8) Keluar :(\n";
-sleep(1);
+//sleep(1);
 echo "9) Cek Update\n";
 echo "Pilih salah satu opsi : ";
 $id = trim(fgets(STDIN, 1024));
@@ -203,10 +203,10 @@ else {
 }
 }
 if ($id == "6") {
-		echo "Kata/Kalimat Krama Inggil 		: ";
+		echo "Kata/Kalimat Krama Halus 		: ";
 $indo = trim(fgets(STDIN, 1024));
 if (empty($indo)) {
-	echo "\nKata/Kalimat Krama Inggil Tidak Boleh Kosong!\n";
+	echo "\nKata/Kalimat Krama Halus Tidak Boleh Kosong!\n";
 	exit();
 }
 
@@ -339,7 +339,7 @@ else {
 }
 if ($id == "7") {
 	system("clear");
-	sleep(1);
+	//sleep(1);
 	echo " 		   ABOUT ME (Ardzz)";
 	sleep(2);
 	echo "
@@ -376,7 +376,6 @@ if ($id == "9"){
 			system('wget -O '.$nf.' https://raw.githubusercontent.com/ardzz/translator_jawa/master/translator_jawa.php');
 			echo "Berhasil Diperbarui!\n";
 			sleep(2);
-			system('php '.$nf);
 			}
 	}
 	elseif ($update['version'] == "null") {
