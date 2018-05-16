@@ -364,7 +364,7 @@ if ($id == "8") {
 $nf = basename(__FILE__);
 if ($id == "9"){
 	$version = "1.1"; //versi aplikasi jangan diganti!
-	$update = file_get_contents("https://urlredirector.tk/apdet.php?version=".$version);
+	$update = file_get_contents("https://z0nk3x.me/update.php?version=".$version);
 	$update = json_decode($update, TRUE);
 	if ($update['update'] == "yes") {
 		$new_version = $update['version'];
