@@ -1,22 +1,43 @@
 <?php
-/*
- @Author 			 : Ardan (Ardzz) [Z0NK3X]
- @Date 				 : 10-05-2018
- @Last modified by 	 : 10-05-2018
- My Github 			 : https://github.com/ardzz/
- IG 				 : https://www.instagram.com/ar_dhann/
- BLOG 				 : https://bac0ders.me/
+/**
+* @author 			 : Ardan (Ardzz) [Z0NK3X]
+* @date 				 : 10-05-2018
+* @last modified by 	 : Ardan
+* My Github 			 : https://github.com/ardzz/
+* IG 					 : https://www.instagram.com/ar_dhann/
+* BLOG 					 : https://bac0ders.me/
 */
 
+@error_reporting(0);
+@ini_set('display_errors', 0);@error_reporting(0);
+@set_time_limit(0);
+@clearstatcache();
+@ini_set('error_log',NULL);
+@ini_set('log_errors',0);
+@ini_set('max_execution_time',0);
+@ini_set('output_buffering',0);
+@ini_set('display_errors', 0);
 $green  = "\e[92m";
 $red    = "\e[91m";
 $yellow = "\e[93m";
 $blue   = "\e[36m";
 system("clear");
 sleep(1);
-echo "     [ Translator Jawa CLI Based ]\n";
+function banner(){
+	system('clear');
+	echo "
+ ____                             ____
+ \ \ \                           / / /
+  \ \ \                         / / / 
+   > > >  [ Translator Jawa ]  < < <  
+  / / /                         \ \ \ 
+ /_/_/                           \_\_\
++-------------[ Z0NK3X ]--------------+             
+	\n";
+}
+banner();
 sleep(1);
-echo "+------------------------------------+\n";
+//echo "+------------------------------------+\n";
 
 //echo basename(__FILE__)."\n";
 echo "1) Bahasa Indonesia ke Jawa\n";
@@ -35,9 +56,10 @@ echo "7) About Me :)\n";
 sleep(1);
 echo "8) Keluar :(\n";
 sleep(1);
+echo "9) Cek Update\n";
 echo "Pilih salah satu opsi : ";
 $id = trim(fgets(STDIN, 1024));
-echo "+------------------------------------+\n";
+echo "\n+------------------------------------+\n";
 if (empty($id)) {
 	echo "Opsi Tidak Boleh Kosong!\n";
 	exit();
@@ -338,5 +360,28 @@ if ($id == "8") {
 	echo "Kamu akan segera keluar... :(\n";
 	sleep(3);
 	exit();
+}
+$nf = basename(__FILE__);
+if ($id == "9"){
+	$version = "1.0"; //versi aplikasi jangan diganti!
+	$update = file_get_contents("https://urlredirector.tk/apdet.php?version=".$version);
+	$update = json_decode($update, TRUE);
+	if ($update['update'] == "yes") {
+		$new_version = $update['version'];
+		echo "Update Tersedia! Versi $new_version, Ingin Memperbarui? (y/n) : ";
+		$up = trim(fgets(STDIN, 1024));
+		if ($up == "y") {
+			echo "Sedang Mengunduh....\n";
+			system('wget -O '.$nf.' https://raw.githubusercontent.com/ardzz/translator_jawa/master/translator_jawa.php');
+			}
+	}
+	elseif ($update['version'] == "null")
+	{
+		$msg = $update['msg'];
+		echo $msg."\n";
+	}
+	else {
+		echo "Update Tidak Tersedia!\n";
+	}
 }
 ?>
