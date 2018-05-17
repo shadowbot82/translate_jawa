@@ -53,7 +53,7 @@ echo "5) Bahasa Indonesia ke Krama Halus\n";
 sleep(1);
 echo "6) Krama Halus ke Bahasa Indonesia\n";
 sleep(1);
-echo "7) Terjamahkan Dari File teks (txt)\n";
+echo "7) Terjemahkan Dari File teks (txt)\n";
 sleep(1);
 echo "8) About Me :)\n";
 sleep(1);
